@@ -8,7 +8,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- end of materialize -->
-
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/skeleton.css">
@@ -46,8 +45,9 @@
 				}
 			})
 
-			$('.modal-trigger').leanModal();
-		})
+			// $('.modal-trigger').leanModal();
+			// $("a[rel*=leanModal]").leanModal();
+			})
 	</script>
 </head>
 
@@ -59,8 +59,8 @@
 	    		<a href="#" id="scrollToAboutMe">
 	    			<img class="circle" src="images/portfolio.jpg" height=120>
 	    		</a><br><br>
-	      		<h1>Hello. My name is Jonathan.</h1>
-	      		<h1>Let's build together.</h1><br>
+	      		<h1>Jonathan Stults.</h1>
+	      		<h1>Full-Stack Web Developer.</h1><br>
 	      		<a href="#" id="scrollToPortfolio">
 	      			<p class="learnMore"><b>Learn more about what I do</b></p>
 	      			<i class="fa fa-arrow-circle-o-down fa-2x" aria-hidden="true"></i>
@@ -78,20 +78,18 @@
 			    <div class="card-content">
 					<span class="card-title activator grey-text text-darken-4">Woot Reboot<i class="material-icons right">more_vert</i></span>
 			      	<p><a href="https://github.com/dwei99/Woot_Reboot">View the Code</a></p>
+							<p><a href="https://drive.google.com/file/d/0B_LxQVbTMzPxNk5val9lVkYxdEE/view">See it in Action!</a></p>
 			      	<!-- Modal Trigger -->
-				  	<a class="modal-trigger" href="#modal1">Client Review</a>
+				  	<!-- <a class="modal-trigger" href="#modal1">Client Review</a>
 
-				  	<!-- Modal Structure -->
-				  	<div id="modal1" class="modal">
+				  	<!-- <div id="modal1" class="modal">
 				    	<div class="modal-content">
-				      		<h4>Melanie and Nate</h4>
-				      		<p>"We love the website! It was exactly how we imagined but better. The page is clean, minimalistic and beautiful. It was such a pleasure working with Donovan. We had a ton of features we wanted on the page, and Donovan was more than knowledgable. We couldn't be more happy!"</p>
-				      		<p>~Melanie</p>
+				      		<a href="https://drive.google.com/file/d/0B_LxQVbTMzPxNk5val9lVkYxdEE/view">View it in action</a>
 				    	</div>
 				    	<div class="modal-footer">
 				      		<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
 				    	</div>
-				  	</div>
+				  	</div> -->
 			    </div>
 			    <div class="card-reveal">
 			      	<span class="card-title grey-text text-darken-4">Woot Reboot<i class="material-icons right">close</i></span>
@@ -114,7 +112,7 @@
 			    </div>
 			    <div class="card-content">
 					<span class="card-title activator grey-text text-darken-4">Group Chat<i class="material-icons right">more_vert</i></span>
-			      	<p><a href="http://52.40.53.219/">View the Website</a></p>
+			      	<p><a href="https://github.com/JonStults/groupChat">View the Code</a></p>
 			    </div>
 			    <div class="card-reveal">
 			      	<span class="card-title grey-text text-darken-4">Group Chat<i class="material-icons right">close</i></span>
@@ -137,17 +135,16 @@
 			    </div>
 			    <div class="card-content">
 					<span class="card-title activator grey-text text-darken-4">Travel Buddy<i class="material-icons right">more_vert</i></span>
-			      	<p><a href="http://www.dojo-secrets.com/">View the Website</a></p>
+			      	<p><a href="https://github.com/JonStults/travelBuddy">View the Code</a></p>
 			    </div>
 			    <div class="card-reveal">
 			      	<span class="card-title grey-text text-darken-4">Travel Buddy<i class="material-icons right">close</i></span>
-			      	<p class="blackText">A fun web application created for posting secrets from the Coding Dojo anonymously. Full log in and registration, standard CRUD operations on users and secrets, and backend security features to prevent hacking and viewing others' secrets.
+			      	<p class="blackText">A travel planning app using Python with a Django framework. Users can login and register to make travel plans. Current user can see plans that others have made, and choose to join the trip, which adds those travel plans to their schedule. A user can also create new travel plans, which others have the option to join.
 			      	<br><br><b>Technologies used:</b>
 			      		<ul>
-			      			<li class="blackText">Ruby on Rails</li>
-			      			<li class="blackText">PostgreSQL</li>
-			      			<li class="blackText">Bootstrap</li>
-			      			<li class="blackText">AWS</li>
+			      			<li class="blackText">Python</li>
+			      			<li class="blackText">SQLite</li>
+			      			<li class="blackText">Django</li>
 			      		</ul>
 			      	</p>
 			    </div>
@@ -163,13 +160,13 @@
 			    </div>
 			    <div class="card-reveal">
 			      	<span class="card-title grey-text text-darken-4">Polls<i class="material-icons right">close</i></span>
-			      	<p class="blackText">A web application that utilizes Angular's two-way data binding and partial loading. The application uses a Rails backend as an API which renders JSON data to the Angular controller.
+			      	<p class="blackText">A MEAN app that is used for creating polls on which other users can vote. The current user also has the option to vote for their favorite answer on various polls, and can see how many votes each answer has received.
 			      	<br><br><b>Technologies used:</b>
 			      		<ul>
 			      			<li class="blackText">Angular.js</li>
-			      			<li class="blackText">Ruby on Rails</li>
-			      			<li class="blackText">SQLite</li>
-			      			<li class="blackText">Bootstrap</li>
+			      			<li class="blackText">Express</li>
+			      			<li class="blackText">Node</li>
+			      			<li class="blackText">MongoDB</li>
 			      		</ul>
 			      	</p>
 			    </div>
@@ -181,7 +178,8 @@
 			    </div>
 			    <div class="card-content">
 					<span class="card-title activator grey-text text-darken-4">Friends<i class="material-icons right">more_vert</i></span>
-			      	<p><a href="https://github.com/donotruck21/mini_mean">View on GitHub</a></p>
+			      	<p><a href="https://github.com/JonStults/friends">View the Code</a></p>
+							<p><a href="https://drive.google.com/file/d/0B_LxQVbTMzPxLUJ1NHducWZMM2c/view">See it in Action!</a></p>
 			    </div>
 			    <div class="card-reveal">
 			      	<span class="card-title grey-text text-darken-4">Friends<i class="material-icons right">close</i></span>
