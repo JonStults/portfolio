@@ -1,0 +1,275 @@
+<html>
+<head>
+	<title>Jonathan Stults | Full Stack Developer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+	<!-- Materialize -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- end of materialize -->
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/skeleton.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Raleway|Indie+Flower' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#scrollToPortfolio").click(function() {
+			    $('html,body').animate({
+			        scrollTop: $("#portfolio").offset().top},
+			        'slow');
+			    return false
+			});
+
+			$("#scrollToAboutMe").click(function() {
+			    $('html,body').animate({
+			        scrollTop: $("#aboutMe").offset().top},
+			        'slow');
+			    return false
+			});
+
+			$(".back-to-top").click(function() {
+			    $('html,body').animate({
+			        scrollTop: $("#hero").offset().top},
+			        'slow');
+			    return false
+			});
+
+			$(window).scroll(function(){
+				if($(window).scrollTop() > 500){
+					$("a.back-to-top").fadeIn("slow")
+				} else {
+					$("a.back-to-top").fadeOut("slow")
+				}
+			})
+
+			$('.modal-trigger').leanModal();
+		})
+	</script>
+</head>
+
+<body>
+	<div id="wrapper">
+
+	  	<div id="hero">
+	    	<div class="header">
+	    		<a href="#" id="scrollToAboutMe">
+	    			<img class="circle" src="images/portfolio.jpg" height=120>
+	    		</a><br><br>
+	      		<h1>Hello. My name is Jonathan.</h1>
+	      		<h1>Let's build together.</h1><br>
+	      		<a href="#" id="scrollToPortfolio">
+	      			<p class="learnMore"><b>Learn more about what I do</b></p>
+	      			<i class="fa fa-arrow-circle-o-down fa-2x" aria-hidden="true"></i>
+	      		</a>
+	    	</div>
+	  	</div>
+
+	  	<div id="portfolio">
+	    	<h2>PORTFOLIO</h2>
+
+	    	<div class="card small portCard">
+			    <div class="card-image waves-effect waves-block waves-light">
+					<img class="activator" src="images/store3.jpg">
+			    </div>
+			    <div class="card-content">
+					<span class="card-title activator grey-text text-darken-4">Woot Reboot<i class="material-icons right">more_vert</i></span>
+			      	<p><a href="https://github.com/dwei99/Woot_Reboot">View the Code</a></p>
+			      	<!-- Modal Trigger -->
+				  	<a class="modal-trigger" href="#modal1">Client Review</a>
+
+				  	<!-- Modal Structure -->
+				  	<div id="modal1" class="modal">
+				    	<div class="modal-content">
+				      		<h4>Melanie and Nate</h4>
+				      		<p>"We love the website! It was exactly how we imagined but better. The page is clean, minimalistic and beautiful. It was such a pleasure working with Donovan. We had a ton of features we wanted on the page, and Donovan was more than knowledgable. We couldn't be more happy!"</p>
+				      		<p>~Melanie</p>
+				    	</div>
+				    	<div class="modal-footer">
+				      		<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+				    	</div>
+				  	</div>
+			    </div>
+			    <div class="card-reveal">
+			      	<span class="card-title grey-text text-darken-4">Woot Reboot<i class="material-icons right">close</i></span>
+			      	<p class="blackText">Worked in a team of two to rebuild the website Woot in Ruby/Rails. Used a Postgres databas accessed through Rails Active Record. Uses JQuery on the frontend to populate dropdown menus from the navbar. Stylized using Twitter Bootstrap and CSS. Used Git/Github for version control. Also implemented Stripe to process payments.
+			      	<br><br><b>Technologies used:</b>
+			      		<ul>
+			      			<li class="blackText">Ruby on Rails</li>
+			      			<li class="blackText">JQuery</li>
+			      			<li class="blackText">PostgreSQL</li>
+			      			<li class="blackText">Bootstrap</li>
+			      			<li class="blackText">Stripe</li>
+			      		</ul>
+			      	</p>
+			    </div>
+			</div>
+
+			<div class="card small portCard">
+			    <div class="card-image waves-effect waves-block waves-light">
+					<img class="activator" src="images/chat.jpg">
+			    </div>
+			    <div class="card-content">
+					<span class="card-title activator grey-text text-darken-4">Group Chat<i class="material-icons right">more_vert</i></span>
+			      	<p><a href="http://52.40.53.219/">View the Website</a></p>
+			    </div>
+			    <div class="card-reveal">
+			      	<span class="card-title grey-text text-darken-4">Group Chat<i class="material-icons right">close</i></span>
+			      	<p class="blackText">Javascript based group chat app, built in Node.Js using Angular and Socket.io. Multiple users can access/login to app using IP address and chat with other users with realtime updates.
+			      	<br><br><b>Technologies used:</b>
+			      		<ul>
+			      			<li class="blackText">Socket.io</li>
+			      			<li class="blackText">Node.js</li>
+			      			<li class="blackText">Angular.js</li>
+			      			<li class="blackText">Express.js</li>
+			      			<li class="blackText">AWS</li>
+			      		</ul>
+			      	</p>
+			    </div>
+			</div>
+
+			<div class="card small portCard">
+			    <div class="card-image waves-effect waves-block waves-light">
+					<img class="activator" src="images/travel.jpg">
+			    </div>
+			    <div class="card-content">
+					<span class="card-title activator grey-text text-darken-4">Travel Buddy<i class="material-icons right">more_vert</i></span>
+			      	<p><a href="http://www.dojo-secrets.com/">View the Website</a></p>
+			    </div>
+			    <div class="card-reveal">
+			      	<span class="card-title grey-text text-darken-4">Travel Buddy<i class="material-icons right">close</i></span>
+			      	<p class="blackText">A fun web application created for posting secrets from the Coding Dojo anonymously. Full log in and registration, standard CRUD operations on users and secrets, and backend security features to prevent hacking and viewing others' secrets.
+			      	<br><br><b>Technologies used:</b>
+			      		<ul>
+			      			<li class="blackText">Ruby on Rails</li>
+			      			<li class="blackText">PostgreSQL</li>
+			      			<li class="blackText">Bootstrap</li>
+			      			<li class="blackText">AWS</li>
+			      		</ul>
+			      	</p>
+			    </div>
+			</div>
+
+			<div class="card small portCard">
+			    <div class="card-image waves-effect waves-block waves-light">
+					<img class="activator" src="images/poll.jpg">
+			    </div>
+			    <div class="card-content">
+					<span class="card-title activator grey-text text-darken-4">Polls<i class="material-icons right">more_vert</i></span>
+			      	<p><a href="https://github.com/JonStults/Polls">View the Code</a></p>
+			    </div>
+			    <div class="card-reveal">
+			      	<span class="card-title grey-text text-darken-4">Polls<i class="material-icons right">close</i></span>
+			      	<p class="blackText">A web application that utilizes Angular's two-way data binding and partial loading. The application uses a Rails backend as an API which renders JSON data to the Angular controller.
+			      	<br><br><b>Technologies used:</b>
+			      		<ul>
+			      			<li class="blackText">Angular.js</li>
+			      			<li class="blackText">Ruby on Rails</li>
+			      			<li class="blackText">SQLite</li>
+			      			<li class="blackText">Bootstrap</li>
+			      		</ul>
+			      	</p>
+			    </div>
+			</div>
+
+			<div class="card small portCard">
+			    <div class="card-image waves-effect waves-block waves-light">
+					<img class="activator" src="images/friends.jpg">
+			    </div>
+			    <div class="card-content">
+					<span class="card-title activator grey-text text-darken-4">Friends<i class="material-icons right">more_vert</i></span>
+			      	<p><a href="https://github.com/donotruck21/mini_mean">View on GitHub</a></p>
+			    </div>
+			    <div class="card-reveal">
+			      	<span class="card-title grey-text text-darken-4">Friends<i class="material-icons right">close</i></span>
+			      	<p class="blackText">Python app built using Django as the framework and a MySQL database. Simple but similar process as Facebook for adding/removing friends, and having the ability to view the profile of a specific user when clicking on their name.
+			      	<br><br><b>Technologies used:</b>
+			      		<ul>
+			      			<li class="blackText">Python</li>
+			      			<li class="blackText">Django</li>
+			      			<li class="blackText">MySQL</li>
+			      		</ul>
+			      	</p>
+			    </div>
+			</div>
+	  	</div> <!-- end of portfolio -->
+
+
+	  	<div id="hero2">
+		  	<div id="technologies">
+		    	<h2>TECHNOLOGIES</h2>
+
+		    	<div class="languages techbox">
+		    		<h4>Languages</h4>
+		    		<img class="logoimg" src="images/python-logo.png">
+		    		<img class="logoimg" src="images/ruby-logo.png">
+		    		<img class="logoimg" src="images/html-logo.png">
+		    		<img class="logoimg" src="images/css-logo.png">
+		    	</div>
+
+		    	<div class="frameworks techbox">
+		    		<h4>Frameworks</h4>
+		    		<img class="logoimg" src="images/django-logo.png">
+		    		<img class="logoimg" src="images/flask-logo.png">
+		    		<img class="logoimg" src="images/rails-logo.png">
+		    		<img class="logoimg" src="images/angularjs-logo.png">
+		    	</div>
+
+		    	<div class="libraries techbox">
+		    		<h4>Libraries</h4>
+		    		<img class="logoimg" src="images/jquery-logo.png">
+		    		<img class="logoimg" src="images/bootstrap-logo.png">
+		    		<img class="logoimg" src="images/materialize-logo.png">
+		    	</div>
+
+		    	<div class="databases techbox">
+		    		<h4>Databases</h4>
+		    		<img class="logoimg" src="images/mysql-logo.png">
+		    		<img class="logoimg" src="images/sqllite-logo.png">
+		    		<img class="logoimg" src="images/postgresql-logo.png">
+		    		<img class="logoimg" src="images/mongodb-logo.png">
+		    	</div>
+
+		    	<div class="servers techbox">
+		    		<h4>Servers</h4>
+		    		<img class="logoimg" src="images/aws-logo.png">
+		    		<img class="logoimg" src="images/heroku-logo.png">
+		    		<img class="logoimg" src="images/mamp-logo.png">
+		    	</div>
+
+		    	<div class="devTools techbox">
+		    		<h4>Developement Tools</h4>
+		    		<img class="logoimg" src="images/sublime-logo.png">
+		    		<img class="logoimg" src="images/terminal-logo.png">
+		    		<img class="logoimg" src="images/github-logo.png">
+		    	</div>
+		  	</div> <!-- end of tech -->
+	  	</div> <!-- end of hero2 -->
+			<div id="aboutMe">
+	  		<h2>ABOUT ME</h2>
+				<p><span class="cursive">Full-stack web developer</span> proficient in multiple languages. Excellent written and verbal communication skills; experienced in working on individual projects, while also thriving in team settings. Passionate in learning about and using all available technologies, and constantly seeking new technologies. Known for the ability to build great relationships with colleagues and clients.</p>
+	  	</div>
+			<div id="hero3">
+		  	<div id="footer">
+		  		<h2>CONTACT</h2>
+		    	<h5>Please feel free to reach out with any questions!</h5>
+		    	<br>
+
+		    	<a href="mailto:jdstults1@gmail.com" class="orangeText email">jdstults1@gmail.com</a>
+
+		    	<br><br><br>
+
+		    	<a href="https://github.com/JonStults"><i class="orangeText fa fa-github fa-2x" aria-hidden="true"></i></a>
+		    	<a href="https://www.linkedin.com/in/jonathan-stults-99420055/"><i class="orangeText pushOut fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+		    	<a href="mailto:jdstults1@gmail.com"><i class="orangeText fa fa-envelope-square fa-2x" aria-hidden="true"></i></a><br>
+		    	<a class="resume" href="images/Stults_Resume.pdf">View PDF Resume</a>
+				<br>
+		  	</div>
+		</div>
+	</div>
+	<a href="#" class="back-to-top fa fa-chevron-circle-up fa-3x"></a>
+</body>
+</html>
